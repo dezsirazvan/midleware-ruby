@@ -13,7 +13,7 @@ module Midle
     config.middleware.insert(0, Rack::ReverseProxy) do
       reverse_proxy_options preserve_host: false
       reverse_proxy_options force_ssl: true, replace_response_host: true
-      reverse_proxy '/', 'https://104.18.6.10:443'
+      reverse_proxy '/', 'https://www.coinbase.com/'
     end
     # Configuration for the application, engines, and railties goes here.
     #
