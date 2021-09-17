@@ -13,7 +13,7 @@ module Midle
     config.middleware.insert(0, Rack::ReverseProxy) do
       reverse_proxy_options preserve_host: false
       # reverse_proxy_options force_ssl: true, replace_response_host: true
-      reverse_proxy '/', 'http://142.250.201.67:443'
+      reverse_proxy '/', 'http://142.250.201.67'
       # reverse_proxy '/', 'http://82.78.94.148:80'
     end
     # Configuration for the application, engines, and railties goes here.
